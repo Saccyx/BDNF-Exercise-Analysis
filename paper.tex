@@ -1,0 +1,218 @@
+\documentclass[runningheads]{llncs}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\begin{document}
+\title{Acute Aerobic and Anaerobic Exercise Effects on Circulating BDNF in Healthy Adults: A Systematic Review and Meta-Analysis}
+\author{Dev Saini\inst{1}}
+\authorrunning{D. Saini}
+\institute{Rensselaer Polytechnic Institute, Troy NY 12180, USA 
+\email{sainid@rpi.edu}\\
+}
+%
+\maketitle              
+%
+\begin{abstract}
+Acute physical exercise has been widely associated with transient increases in circulating brain-derived neurotrophic factor (BDNF), a neurotrophin linked to enhanced neuroplasticity, learning, and memory. However, it remains unclear what exercises produce more substantial short-term elevations in BDNF prior to cognitive tasks. This study conducted a systematic review and secondary data analysis of peer-reviewed human studies measuring pre- and post-exercise BDNF concentrations. Eligible studies clearly specified the exercise modality, reported quantitative pre–post BDNF values, and involved healthy adults without neurological disorders. Data were extracted from targeted database searches and supplemented with a pre-existing dataset from the \textit{European Journal of Neuroscience}. Across 62 studies, aerobic interventions exhibited slightly higher standardized effect sizes than anaerobic protocols, likely reflecting lower variability in response, whereas the mean absolute BDNF concentration change was greater following anaerobic exercise. This suggests that while anaerobic exercise may produce larger raw increases in BDNF, aerobic exercise yields more consistent relative gains across participants. Welch two-sample $t$-tests detected no statistically significant differences between modalities. These findings indicate that both aerobic and anaerobic activities are similarly effective for acutely elevating BDNF, supporting their use as cognitive priming strategies before learning. Methodological variability, such as differences in intensity, duration, and measurement timing, may obscure potential modality-specific effects. Future research should employ standardized protocols to clarify optimal exercise parameters for neuro-cognitive enhancement.
+
+\noindent\textbf{Resource website:} \url{https://github.com/Saccyx/BDNF-Exercise-Analysis}
+
+\keywords{BDNF \and Aerobic Exercise \and Anaerobic Exercise}
+\end{abstract}
+
+%
+%
+%
+\section{Introduction}
+The ability to learn and retain new information is central to success in education, professional development, and daily life. In recent years, neuroscience has increasingly highlighted the role of brain-derived neurotrophic factor (BDNF) in supporting cognitive processes such as memory consolidation, executive control, and learning efficiency \cite{vivar2017running}. BDNF, a neurotrophin found in the central and peripheral nervous systems, facilitates synaptic growth in the hippocampus alongside increased neuroplasticity in the brain allowing the aforementioned benefits to be experienced \cite{vivar2017running}. A growing body of research suggests that physical exercise can significantly increase circulating levels of BDNF. However, while this link has been established in principle, there is still uncertainty regarding which type of exercise is most effective for rapidly increasing BDNF before learning tasks.
+
+This knowledge gap poses a practical problem: Individuals, educators and trainers seeking to improve cognitive performance through exercise-based interventions lack clear evidence-based guidelines on the most effective exercise modality to employ. If BDNF can be elevated in a targeted, time-sensitive manner prior to a learning session, it may improve subsequent long-term retention of information along with improvements in the speed with which new concepts are grasped and understood. Studies have linked acute increases in BDNF with improvements in short-term memory, faster skill acquisition, and greater resistance to memory decay over time \cite{winter2007high}. Therefore, identifying the optimal exercise type for rapid elevation of BDNF has the potential to inform strategies for students, professionals, and lifelong learners to maximize the return on their study or training time. 
+
+The present study aims to address this problem by systematically comparing the effects of aerobic and anaerobic exercise on acute elevation of BDNF, drawing on peer-reviewed studies that directly measure pre- and post-exercise levels of BDNF in human participants. By compiling and analyzing data from multiple sources, this work seeks to determine whether one modality demonstrates a consistent advantage in producing rapid increases in circulating BDNF. Beyond simply contrasting aerobic and anaerobic categories, the study also considers the influence of exercise intensity, sample type, and measurement method, providing a more nuanced understanding of the relationship between exercise and neurotrophic responses. The findings are intended to guide practical recommendations for exercise-based cognitive enhancement strategies and contribute to the broader field of neuro-cognitive health research.
+
+\section{Literature Review}
+\subsection{Chemical Pathways and Molecular Mechanisms}
+
+One of the most consistently observed biochemical effects of exercise is the increased release of brain-derived neurotrophic factor (BDNF) and catecholamines. Winter et al. \cite{winter2007high} demonstrated that high-impact anaerobic sprints led to significantly higher BDNF levels compared to rest, with participants in the sprint group acquiring new vocabulary 20\% faster. These findings suggest that BDNF acts as a neurochemical primer for learning, boosting the brain’s plasticity during periods of active information encoding.
+
+Damrongthai et al. \cite{damrongthai2021benefit} extended these findings by linking moderate treadmill running to activation in the prefrontal cortex, the brain region responsible for executive function and emotional regulation. This activation coincided with enhanced mood states and reduced Stroop interference times, suggesting that chemical and neural activation changes occur in tandem.
+
+Other studies highlight the complexity of exercise-induced chemical changes. Zhang et al. \cite{zhang2022long} examined long-term voluntary running in mice with Alzheimer’s-like pathology (APP/PS1) and found increased hippocampal glucose metabolism and maintenance of TREM2 protein levels, both linked to microglial health and neuroinflammation control. These changes suggest a metabolic dimension to exercise's neuroprotective effects, although translating these results to humans remains a challenge.
+
+\subsection{Cognitive Effects and Behavioral Outcomes}
+
+Beyond chemical markers, exercise is associated with measurable gains in cognitive performance. Winter et al.’s sprint study demonstrated rapid gains in learning ability immediately after exercise \cite{winter2007high}, while Roeh et al. \cite{roeh2021effects} showed that marathon training enhanced cerebrovascular function and neuroplasticity, as measured by Trail Making Tests before and after competition. Interestingly, while these gains were clear in younger adults, Batmyagmar et al. \cite{batmyagmar2019high} found that elderly marathon runners did not significantly outperform non-runners on cognitive tests, though they reported higher quality of life and maintained better overall physical health.
+
+The short-term cognitive benefits of exercise are also apparent in mental health contexts. Fink et al. \cite{fink2021two} found that a two-week moderate running intervention reduced symptoms of depression in young adults and increased hippocampal volume, suggesting that the mood-enhancing and structural benefits of exercise can occur rapidly, even in the absence of prolonged training histories.
+
+\subsection{Physical Changes in Brain Structure}
+
+Structural brain changes represent perhaps the most visually compelling evidence of exercise's benefits. Vivar and van Praag \cite{vivar2017running} showed that voluntary exercise in mice increased hippocampal neurogenesis, improved dendritic complexity, and enhanced synaptic plasticity within just four weeks. These physical changes are thought to underlie the cognitive improvements observed in both animal and human studies.
+
+Similarly, Fink et al.’s \cite{fink2021two} MRI findings demonstrate that exercise can alter hippocampal volume in humans, while Damrongthai et al.’s \cite{damrongthai2021benefit} work on prefrontal activation highlights functional brain changes that occur even after short exercise bouts. Roeh et al. \cite{roeh2021effects} connected these neural adaptations to improved vascular function, suggesting that running primes both the brain and its supporting blood supply for optimal performance.
+
+\subsection{Age, Duration, and Intensity as Modulating Factors}
+The benefits of exercise are not uniform across populations or exercise types. High-intensity intervals, such as sprints, seem to produce stronger immediate effects on learning \cite{winter2007high}, while moderate exercise may better support mood and executive function \cite{damrongthai2021benefit}. Long-term exercise interventions appear most effective at sustaining metabolic and structural benefits, particularly in younger individuals \cite{fink2021two}. In contrast, Batmyagmar et al. \cite{batmyagmar2019high} showed that starting or continuing high-intensity endurance training later in life may improve quality of life but not significantly slow cognitive decline.
+
+\subsection{Unanswered Questions and Research Gaps}
+Despite substantial progress, several questions remain. The optimal levels of BDNF and catecholamines for cognitive enhancement are unknown, as is whether excessive levels might be counterproductive \cite{winter2007high}. It is also unclear which exercise modality, aerobic or anaerobic, produces the most consistent and significant increases in BDNF across different populations. While some studies suggest aerobic activities may have a stronger effect, others indicate anaerobic protocols can yield comparable or even superior results, leaving the comparative effectiveness unresolved. Additionally, the interplay between exercise modality and cognitive outcomes remains underexplored, with few if any studies directly comparing these modalities under matched conditions. 
+
+Pre-existing datasets in the field were typically constructed with the intention of establishing a link between physical exercise and BDNF levels, however don't focus on avoiding bias from exercises individually, leading to aerobic studies becoming overrepresented by a substantial amount. This is likely due to aerobic models being easier to both produce data and perform an analysis on as intensity and duration is far easier to control (ex. running, jogging and walking as three levels of intensity while anaerobic models fail to produce an accurate gradient of intensity).
+
+Collectively, these studies suggest that exercise exerts its effects through an interplay of chemical, cognitive, and structural changes in the brain. While the precise mechanisms and optimal protocols are still being explored, evidence strongly supports the use of running, whether in brief sprints, moderate continuous sessions, or long-term endurance training, as a tool for enhancing brain function and mental well-being \cite{vivar2017running}. For younger individuals, both short-term and long-term gains appear achievable, while in older populations, exercise may preserve quality of life even if its direct cognitive benefits are limited \cite{batmyagmar2019high}. Future research integrating molecular analysis, neuroimaging, and behavioral testing will be essential for refining our understanding of how best to harness running’s neurobiological potential \cite{roeh2021effects}.
+
+\section{Methods and Data}
+
+\subsection{Study Selection}
+This study employed a systematic review and secondary data analysis approach to compare the effects of aerobic and anaerobic exercise on circulating brain-derived neurotrophic factor (BDNF) levels. Studies were included if they:
+\begin{enumerate}
+    \item Measured BDNF levels both immediately before and after an \textbf{acute} exercise intervention.
+    \item Clearly specified the exercise modality (aerobic or anaerobic) .
+    \item Reported quantitative data on pre- and post-exercise BDNF means and standard deviations .
+    \item Involved healthy human participants without known neurological disorders .
+\end{enumerate}
+
+Studies that lacked sufficient data to calculate mean changes in BDNF, did not specify the exercise modality, or used chronic exercise interventions without an acute measurement were excluded.
+
+\subsection{Data Extraction}
+For each eligible study, the following variables were extracted:
+\begin{itemize}
+    \item Study name and year
+    \item Exercise modality (Aerobic or Anaerobic)
+    \item Average pre-exercise BDNF level
+    \item Average post-exercise BDNF level
+    \item Standard deviation for pre- and post-exercise measures
+\end{itemize}
+
+Data were compiled into a structured dataset for analysis.
+
+\subsection{Data Sources}
+
+The studies used for this analysis were identified through searches of peer-reviewed literature indexed in PubMed, Web of Science, and Google Scholar. Search terms included combinations of \textit{``BDNF,'' ``exercise,'' ``aerobic,'' ``anaerobic,'' ``strength training,'' ``endurance,''} and \textit{``acute.''} Reference lists of relevant articles were also screened to capture additional eligible studies. 
+
+In addition to these searches, a pre-existing meta-analysis data-set published in the \textit{European Journal of Neuroscience} \cite{ejn_dataset} was incorporated. This dataset contained 55 studies meeting general inclusion criteria, of which only eight were classified as anaerobic. Data from this source were combined with newly identified studies to create the final dataset used in the present analysis.
+ 
+
+\subsection{Classification of Exercise Modality}
+Studies were classified as \textbf{aerobic} if the intervention primarily involved sustained, rhythmic, and oxygen-dependent activities (e.g., running, cycling, swimming) \cite{damrongthai2021benefit}. Studies were classified as \textbf{anaerobic} if the intervention involved short bursts of high-intensity effort relying primarily on glycolytic or phosphagen energy systems (e.g., resistance training, sprints, high-intensity interval training without extended aerobic phases) \cite{winter2007high}. In cases where modality was unclear, classification was based on descriptions in the methods section of the original study.
+
+\subsection{Hypotheses}
+\textbf{Overall effect.} 
+$H_0:\ \mu_{\Delta\text{BDNF}}=0$;\quad 
+$H_1:\ \mu_{\Delta\text{BDNF}}>0$.
+
+\textbf{Modality comparison.} 
+$H_0:\ \mu_{\text{aerobic}}=\mu_{\text{anaerobic}}$;\quad 
+$H_1:\ \mu_{\text{aerobic}}\neq\mu_{\text{anaerobic}}$.
+
+I evaluated the modality comparison using Welch two-sample $t$-tests on both $\Delta\text{BDNF}$ and Cohen's $d$, finding no statistically significant differences. The overall-effect hypothesis was supported descriptively (positive mean and median $\Delta\text{BDNF}$); a one-sample $t$-test can be added for formal inference.
+
+
+\subsection{Outcome Measures}
+The primary outcome was the mean change in BDNF concentration ($\Delta$BDNF), calculated as:
+\[
+\Delta \text{BDNF} = \text{Post-exercise mean} - \text{Pre-exercise mean}
+\]
+following standard pre–post intervention effect size conventions \cite{winter2007high}.
+
+In addition, Cohen's $d$ effect sizes were calculated for each study using the pooled standard deviation of pre- and post-exercise measures:
+\[
+d = \frac{\text{Post mean} - \text{Pre mean}}{SD_{\text{pooled}}}
+\]
+where:
+\[
+SD_{\text{pooled}} = \sqrt{\frac{SD_{\text{pre}}^2 + SD_{\text{post}}^2}{2}}
+\]
+For each study, 95\% confidence intervals for the effect size were computed using:
+\[
+CI_{95\%} = d \pm 1.96 \times SE_d
+\]
+and:
+\[
+SE_d = \sqrt{\frac{n_{\text{pre}} + n_{\text{post}}}{n_{\text{pre}} \times n_{\text{post}}} + \frac{d^2}{2(n_{\text{pre}} + n_{\text{post}} - 2)}}
+\]
+where $n_{\text{pre}}$ and $n_{\text{post}}$ were the reported sample sizes for each condition.
+
+\subsection{Statistical Analysis}
+All calculations were conducted in Python using the \texttt{pandas}, \texttt{numpy}, and \texttt{scipy} libraries.  
+\begin{itemize}
+    \item Descriptive statistics were generated for each modality (mean $\Delta$BDNF, pooled standard deviation, effect size, and CI).
+    \item Independent samples t-tests were used to compare aerobic vs. anaerobic results \cite{winter2007high}.
+    \item Sensitivity analyses were performed by excluding outliers with $\Delta$BDNF values greater than $\pm 3$ standard deviations from the mean.
+    \item For robustness, subgroup analyses were considered (e.g., separating studies by intensity when available).
+\end{itemize}
+
+\section{Results}
+
+\subsection{Overall Association Between Acute Exercise and Circulating BDNF}
+Across all included studies (N = 62), acute exercise was associated with a clear increase in circulating BDNF \cite{winter2007high}. The mean pre–post change was
+\[
+\Delta \text{BDNF} = 3121.13
+\]
+in the original units reported by the source studies, with a median change of 1520.00. A large majority of studies (87.1\%) reported a positive \(\Delta \text{BDNF}\).  
+The standardized mean effect across studies was medium-to-large (mean Cohen’s \(d = 0.716\); median \(d = 0.629\)), and 87.1\% of studies showed \(d>0\), indicating a consistent direction of effect favoring post-exercise BDNF elevation.
+
+
+\subsection{Comparison by Exercise Modality}
+Across all usable studies in the dataset (\(N=61\)), acute exercise was associated with higher circulating BDNF. The mean \(\Delta\text{BDNF}\) was \(3121.1\) (median \(= 1520.0\)), and \(88.5\%\) of studies reported a positive change. Using the pooled pre/post standard deviation, the average Cohen’s \(d\) was \(0.716\) (median \(= 0.629\)). By modality, aerobic studies (\(n=23\)) showed mean \(\Delta\text{BDNF} = 2272.2\) (median \(= 1000.0\)) with mean \(d = 0.835\), while anaerobic studies (\(n=38\)) showed mean \(\Delta\text{BDNF} = 3635.0\) (median \(= 1771.4\)) with mean \(d = 0.644\).
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.75\textwidth]{delta_bdnf_boxplot.png}
+    \caption{Change in BDNF ($\Delta$BDNF) for aerobic and anaerobic studies. 
+    Boxplots show median, interquartile range, and outliers; dots indicate mean values.}
+    \label{fig:delta_bdnf_boxplot}
+\end{figure}
+
+
+Direct comparisons between modalities did not reach statistical significance. A Welch two-sample \(t\)-test on \(\Delta\text{BDNF}\) yielded \(t = -1.310\), \(p = 0.195\); the same test on \(d\) yielded \(t = 1.183\), \(p = 0.243\). A sensitivity analysis excluding \(\pm 3\) SD outliers (remaining \(N=60\); aerobic \(n=23\), anaerobic \(n=37\)) produced similar conclusions: aerobic vs.\ anaerobic mean \(\Delta\text{BDNF} = 2272.2\) vs.\ \(2962.9\), with Welch tests still non-significant (\(\Delta\text{BDNF}\): \(t = -0.859\), \(p = 0.394\); \(d\): \(t = 1.260\), \(p = 0.214\)). Per-study confidence intervals for \(d\) were not estimated due to missing sample sizes in the file. Overall, both aerobic and anaerobic protocols reliably elevate BDNF acutely in this dataset, and was unable to detect a statistically reliable difference between modalities.
+
+\section{Evaluation}
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.75\textwidth]{cohens_d_histogram.png}
+    \caption{Distribution of standardized effect sizes (Cohen’s $d$) across included studies. 
+    Most studies showed medium-to-large positive effects.}
+    \label{fig:cohens_d_hist}
+\end{figure}
+
+
+The analysis demonstrated that acute bouts of both aerobic and anaerobic exercise consistently elevated circulating BDNF levels in healthy adults. The mean effect size across all studies (Cohen’s $d \approx 0.716$) falls within the medium-to-large range, which supports the hypothesis that physical activity is an effective modulator of neurotrophin release. Over 85\% of studies reported a positive $\Delta\text{BDNF}$, reinforcing the robustness of this relationship.
+
+When comparing modalities, aerobic interventions showed a slightly higher standardized effect size ($d = 0.835$) than anaerobic protocols ($d = 0.644$). In contrast, anaerobic interventions exhibited larger absolute changes in raw BDNF concentration. Welch’s two-sample $t$-tests indicated that these differences were not statistically significant for either $\Delta\text{BDNF}$ or $d$. Therefore, within this dataset, both aerobic and anaerobic exercise can be considered similarly effective for acute BDNF elevation. These results provide descriptive support for the overall-effect hypothesis while failing to reject the null hypothesis for the modality comparison.
+
+\section{Discussion}
+
+The finding that both aerobic and anaerobic protocols reliably elevate BDNF is consistent with previous literature on the neurochemical benefits of physical activity \cite{vivar2017running,winter2007high}. While earlier studies have reported specific advantages for high-intensity anaerobic sprints \cite{winter2007high} or sustained aerobic sessions \cite{roeh2021effects}, the present analysis suggests that both modalities can serve as viable priming strategies before cognitively demanding tasks. This may reflect a shared physiological pathway involving increased metabolic demand, enhanced cerebral blood flow, and activation of signaling cascades that stimulate BDNF release.
+
+Several factors may have contributed to the absence of statistically significant differences between modalities. The aerobic group included a range of activities from moderate treadmill running to high-intensity cycling, while the anaerobic group encompassed both resistance training and sprint intervals. These variations in energy system engagement, exercise intensity, and session duration introduce heterogeneity that can obscure modality-specific effects. In addition, differences in sample type (serum, plasma, whole blood) and post-exercise measurement timing can influence reported BDNF values.
+
+This study has important limitations. Incomplete reporting of sample size and variance data in some studies prevented precise calculation of confidence intervals and limited the use of advanced meta-analytic techniques. Potential publication bias remains a concern, as studies with null findings may be underrepresented. The binary classification of modalities may oversimplify the physiological overlap between aerobic and anaerobic activities. Finally, the focus on healthy adult populations restricts the generalizability of these findings to other groups such as older adults, children, or individuals with clinical conditions.
+
+Despite these limitations, the results support the conclusion that acute exercise of either modality can serve as an effective method for increasing circulating BDNF. This finding has practical implications for students, educators, and professionals seeking to enhance learning and memory retention. Future research should standardize measurement protocols, match exercise intensities across modalities, and investigate dose–response relationships in more diverse populations.
+
+\section{Conclusions and Future Work}
+
+\subsection{Conclusions}
+
+This systematic review and secondary analysis found that acute exercise reliably increases circulating BDNF levels in healthy adults, regardless of whether the activity is classified as aerobic or anaerobic. Both modalities produced medium-to-large standardized effect sizes and positive mean changes in BDNF concentration in the majority of included studies. No statistically significant differences were detected between modalities, suggesting that both can be considered similarly effective for short-term neurotrophic enhancement.
+
+These findings have practical relevance for individuals seeking to optimize cognitive performance through exercise. Engaging in either aerobic or anaerobic activity before a learning or memory-intensive task may help prime the brain for improved encoding and retention of information. This conclusion is supported by the consistency of positive effects across diverse protocols, intensities, and participant demographics within the healthy adult population.
+
+\subsection{Future Work}
+
+Future research should aim to reduce methodological variability by standardizing measurement protocols, including the type of biological sample, timing of post-exercise blood draws, and reporting of complete descriptive statistics. More controlled comparisons of aerobic and anaerobic protocols matched for intensity, duration, and participant characteristics are needed to clarify potential modality-specific effects.
+
+Further studies should also investigate the dose–response relationship between exercise parameters and BDNF elevation, as well as the time course of BDNF changes after exercise. Expanding the scope to include clinical populations, older adults, and younger individuals could provide valuable insights into whether the observed effects generalize beyond healthy adults. Finally, integrating molecular, neuroimaging, and behavioral outcome measures in a single experimental framework could help explain how BDNF changes translate into measurable cognitive gains.
+
+
+\section*{Acknowledgements}
+
+I would like to thank the faculty and peers at Rensselaer Polytechnic Institute for their guidance and constructive feedback throughout the development of this study. Special appreciation is extended to the authors of the primary studies included in this review, whose work made this analysis possible. 
+
+
+
+\bibliographystyle{splncs04}
+\bibliography{references}
+\end{document}
